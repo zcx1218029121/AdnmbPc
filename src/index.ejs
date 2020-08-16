@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/@mdi/font@5.x/css/materialdesignicons.min.css" rel="stylesheet">
+<link href="https://cdn.bootcdn.net/ajax/libs/material-design-icons/3.0.1/iconfont/MaterialIcons-Regular.eot"
+      rel="stylesheet">
+<head>
+    <meta charset="utf-8">
+    <title>flows</title>
+    <% if (htmlWebpackPlugin.options.nodeModules) { %>
+        <!-- Add `node_modules/` to global paths so `require` works properly in development -->
+        <script>
+          require('module').globalPaths.push('<%= htmlWebpackPlugin.options.nodeModules.replace(/\\/g, '\\\\') %>')
+        </script>
+    <% } %>
+</head>
+<body >
+
+<div id="app"></div>
+<!-- Set `__static` path to static files in production -->
+
+
+<!-- webpack builds are automatically injected -->
+</body>
+<style>
+    ::-webkit-scrollbar {
+        width: 0px;
+    }
+    html,body{
+        -webkit-app-region: drag;
+    }
+</style>
+</html>
